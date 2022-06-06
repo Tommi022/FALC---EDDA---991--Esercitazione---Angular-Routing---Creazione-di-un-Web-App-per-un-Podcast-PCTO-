@@ -1,15 +1,11 @@
-<div>
-    <h1>
-      PLAYER
-    </h1>
-      <a routerLink="" >Home</a>
-      <br>
-      <a routerLink="secondo" routerLinkActive="focus" [routerLinkActiveOptions]="{exact:true}">Lista podcast</a>
-      <br>
-      <a routerLink="terzo" routerLinkActive="focus" [routerLinkActiveOptions]="{exact:true}">Play</a>
-      
-  
+
+
+<ul>
+  <li><a routerLink="" >Home</a></li>
+  <li><a routerLink="secondo" routerLinkActive="focus" [routerLinkActiveOptions]="{exact:true}">Lista podcast</a></li>
+  <li><a [routerLink]="['terzo', 0]" routerLinkActive="focus" [routerLinkActiveOptions]="{exact:true}">Play</a></li>
+</ul>   
+     
     <main>
       <router-outlet></router-outlet>
     </main>
-  </div>

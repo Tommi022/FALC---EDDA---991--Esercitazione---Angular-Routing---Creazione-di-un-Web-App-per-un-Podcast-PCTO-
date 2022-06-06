@@ -5,5 +5,5 @@ import { TerzoComponent } from './terzo/terzo.component'
 export const AppRoutes: Routes = [
   { path: '', component: PrimoComponent },
   { path: 'secondo', component: SecondoComponent },
-  { path: 'terzo', component: TerzoComponent }
+  { path: 'terzo/:id', component: TerzoComponent }
 ];
